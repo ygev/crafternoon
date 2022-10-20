@@ -1,0 +1,142 @@
+:root {
+  --orange: #FF9900;
+  --purple: #211D2B;
+}
+
+
+@font-face {
+    font-family: Lyno;
+    src: url(LynoJean.woff);
+  }
+
+  @font-face {
+      font-family: 'Space Mono';
+      font-weight: normal;
+      src: url(SpaceMono-Regular.woff);
+    }
+
+  @font-face {
+    font-family: 'Space Mono';
+    font-weight: italic;
+    src: url(SpaceMono-Italic.woff);
+  }
+
+  @font-face {
+    font-family: 'Space Mono';
+    font-weight: bold;
+    src: url(SpaceMono-Bold.woff);
+  }  
+  
+  @font-face {
+    font-family: 'Space Mono';
+    font-weight: bold;
+    font-style: italic;
+    src: url(SpaceMono-BoldItalic.woff);
+  }
+
+body {
+  background-color: var(--purple);
+  overflow: hidden;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  justify-content: center;
+  height: 100vh;
+}
+
+h2 {
+  font-family: 'Space Mono';
+  font-style: italic;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;  
+  color: var(--purple);
+  background-color: var(--orange);
+  width: fit-content;
+  padding: 4px 16px;;
+}
+
+h1 {
+    font-family: Lyno;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12em;
+    line-height: 100%;
+    color: var(--orange);
+    margin-bottom: 24px;
+}
+
+button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 64px;
+  border: 1px solid var(--orange);
+  color: var(--orange);
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 150%;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+
+textarea {
+background-color: var(--purple);
+color: var(--orange);
+border: 1px solid var(--orange);
+height: 30vh;
+margin-bottom: 16px;
+padding: 16px;
+width: 100%;
+box-sizing: border-box;
+line-height: 200%;
+}
+
+
+form {
+  display: flex;
+  
+}
+
+.form-and-button {
+  margin-right: 24px;
+}
+
+.result-row {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--orange);
+  border-bottom: 1px solid var(--orange);
+}
+
+.result-link, a {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  color: var(--orange);
+  border-bottom: 1px solid var(--orange);
+}
+
+th, td {
+  padding: 20.5px 8px;
+}
+
+table {
+  width: 100%;
+}
+
+button:hover {
+  background-color: var(--orange);
+  color: var(--purple);
+}
